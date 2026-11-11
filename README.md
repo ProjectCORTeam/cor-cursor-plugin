@@ -1,0 +1,1 @@
+# cor-cursor-plugin
