@@ -52,6 +52,15 @@ Each action runs as the COR user who signs in, and the server can only do what t
 
 Assigning collaborators replaces the whole list.
 
+## Skills
+
+Invoke a skill in chat with its name, or let the agent pick it when the request matches.
+
+- `/log-hours-from-commits` drafts hours from git commits and logs them only after you confirm.
+- `/work-from-cor-task` loads a task, then updates it or posts a comment only after you confirm.
+- `/project-status-report` is a read-only project status and profitability report.
+- `/triage-pending-tasks` reviews pending tasks for today or this week and stays read-only unless you ask for a change.
+
 ## Docs
 
 - COR MCP server: https://developers.projectcor.com/ai-tools/mcp-server
