@@ -31,25 +31,26 @@ Auth is OAuth 2.0 with dynamic client registration. On first use, Cursor opens a
 
 ## Before you connect
 
-You need an active COR account at [cor.works](https://cor.works). Any role can connect: Collaborator, Project Manager, Director, or C-Level.
+You need an active COR account at [cor.works](https://cor.works). Your COR role and permissions decide what the agent can see and change.
 
 ## What agents can do
 
 | Category | Capabilities |
 | --- | --- |
-| Projects | List projects with filters. Get details, including budget, profitability, logged hours, and billing. Create a project. Change status, archive the project, reassign the project manager, or update the budget. |
-| Tasks | Search tasks. List your pending tasks. Get task details. Create and update tasks. View and assign collaborators. Assign and remove labels. |
-| Communication | Post a message on a task thread, including an @mention. |
-| Time tracking | Log hours on a task with a date, a duration, and an optional description. Search time entries, including totals. |
-| Team | Get your profile. List users. Get one user by ID. |
-| Attachments | Add a task attachment from Google Drive, Dropbox, or OneDrive. List attachments for a task. |
-| Reference | List labels for a task, a project, or a user. Get a direct URL for a task, a project, or a client. |
-
-You can also browse team members, clients, and project statuses.
+| Projects | List projects with filters. Get details, including budget, profitability, logged hours, billing, and sold positions. Create a project. Update its name, brief, client, dates, project manager, status, estimated hours, or billable flag, or archive it. |
+| Tasks | Search tasks. List your pending tasks. Get task details. Create and update tasks, including status, priority, dates, estimates, subtasks, and archiving. View collaborators and set the collaborator list. Add and remove labels. |
+| Communication | Read the messages on a task. Post a message on a task, including @mentions. |
+| Time tracking | Log hours on a task with a date, a duration, and an optional description. Get an hours report for up to 3 months at a time, filtered by user, project, client, or approval status, with totals. |
+| Team | Get your profile. List users. Get one user by ID. See vacations and other leave in a date range. |
+| Clients | List clients. Get one client's details. |
+| Attachments | Attach a Google Drive, Dropbox, or OneDrive file to a task by its link. List a task's attachments. |
+| Reference | List the available labels for tasks, projects, or users, and see the labels on a task. Get a direct link to a task, a project, or a client. |
 
 ## Notes
 
-Each action runs as the COR user who signs in. The server can only do what that user's role permits. It does not store or share data outside the COR account and the active session.
+Each action runs as the COR user who signs in, and the server can only do what that user's COR role permits. To keep you signed in, the server stores your OAuth session on Cloudflare: your COR access and refresh tokens, user ID, name, email, and company subdomain. It doesn't keep copies of your projects, tasks, messages, or hours. For product analytics and error monitoring, it sends usage events to COR, Amplitude, and Sentry: which tool ran, how long it took, whether it failed, and which MCP client you used. Amplitude also gets your name, email, and company. See the privacy policy below.
+
+Assigning collaborators replaces the whole list.
 
 ## Docs
 
