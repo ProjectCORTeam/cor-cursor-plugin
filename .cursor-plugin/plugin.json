@@ -1,0 +1,13 @@
+{
+  "name": "cor",
+  "version": "1.0.0",
+  "description": "Work with COR projects, tasks, messages, and time logs.",
+  "author": {
+    "name": "ProjectCOR"
+  },
+  "homepage": "https://projectcor.com",
+  "repository": "https://github.com/ProjectCORTeam/cor-cursor-plugin",
+  "license": "MIT",
+  "keywords": ["cor", "projects", "tasks", "mcp"],
+  "logo": "assets/logo.svg"
+}
